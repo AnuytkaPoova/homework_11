@@ -12,13 +12,13 @@ public class BoxFruit <T extends Fruit & Packable>{
     }
 
     public void pourOverFruit(BoxFruit boxFruit) {
-        if (!fruits.isEmpty()) {
+        if (!this.fruits.isEmpty()) {
             for (int i = 0; i < this.fruits.size(); i++) {
-                boxFruit.addFruit(fruits.get(i));
+                boxFruit.addFruit(this.fruits.get(i));
 
             }
 
-            fruits.removeAll(fruits);
+            this.fruits.removeAll(this.fruits);
         }
     }
 
