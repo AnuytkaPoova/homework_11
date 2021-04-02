@@ -27,7 +27,7 @@ import java.util.Arrays;
  */
 
 public class App {
-
+    //Задание 1
     public  <A> A[] isChanging(A[] arr) {
         A per = null;
         for (int i = 0; i < arr.length; i++) {
@@ -37,7 +37,7 @@ public class App {
         }
         return arr;
     }
-
+    //Задание 2
     public  <A> ArrayList<A> transform(A[] arr) {
         final ArrayList<A> arrayList = new ArrayList<>(Arrays.asList(arr));
         System.out.println("Тип: " + arrayList.getClass().getName());
@@ -84,6 +84,7 @@ public class App {
 
         appleBoxFruit2.addFruit(new Apple("Антоновка",10));
         appleBoxFruit2.addFruit(new Apple("Симеринка",10));
+
 
 
         orangeBoxFruit2.addFruit(new Orange("Марокко",5));

@@ -12,12 +12,14 @@ public class BoxFruit <T extends Fruit & Packable>{
     }
 
     public void pourOverFruit(BoxFruit boxFruit) {
-        for(int i = 0; i < this.fruits.size(); i++){
-            boxFruit.addFruit(fruits.get(i));
-            fruits.remove(fruits.get(i));
-        }
-        fruits.removeAll(fruits);
+        if (!fruits.isEmpty()) {
+            for (int i = 0; i < this.fruits.size(); i++) {
+                boxFruit.addFruit(fruits.get(i));
 
+            }
+
+            fruits.removeAll(fruits);
+        }
     }
 
     public float getWeightFull() {
